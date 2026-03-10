@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS Portfolio – Your Name</title>
+  <meta name="description" content="Personal portfolio of a computer science student, showcasing projects, coursework, and experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span class="brand-text">Tasnim Rahmatullah</span>
+      </a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="inner hero-grid">
+        <div>
+          <h1>Hi, I’m <span class="accent">Tasnim Rahmatullah</span>.</h1>
+          <p class="lead">
+            DevOps and MLOps Engineer, AI Engineer, ML Enthusiast
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View projects</a>
+            <a href="#contact" class="btn ghost">Get in touch</a>
+          </div>
+          <dl class="quick-facts">
+            <div>
+              <dt>Based in</dt>
+              <dd>Dhaka, Bangladesh</dd>
+            </div>
+            <div>
+              <dt>Studying at</dt>
+              <dd>BRAC University</dd>
+            </div>
+            <div>
+              <dt>Interested in</dt>
+              <dd>ML, AI, MLOps, DevOps</dd>
+            </div>
+          </dl>
+        </div>
+        <aside class="hero-card" aria-label="At a glance">
+          <div class="hero-photo-wrapper">
+            <div class="hero-photo-frame">
+              <!-- Replace profile.jpg with your actual image file name -->
+              <img src="profile.jpg" alt="Portrait of Tasnim Rahmatullah" class="hero-photo" />
+            </div>
+          </div>
+          <h2>At a glance</h2>
+          <ul>
+            <li><span class="label">Languages</span><span class="value">Python, Java, C++, Go</span></li>
+            <li><span class="label">Favorite stack</span><span class="value">React, Node, Postgres, MongoDB</span></li>
+            <li><span class="label">Currently learning</span><span class="value">DevOps, MLOps & Cloud</span></li>
+            <li><span class="label">Outside of code</span><span class="value">Problem solving, Gaming</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="inner two-column">
+        <div>
+          <h2>About</h2>
+          <p>
+            I am a B.Sc. Computer Science student at BRAC University with a strong interest in machine learning, MLOps,
+            and applied AI. I enjoy understanding the full pipeline—from cleaning data and training models to deploying
+            them in a way that is reliable and cost‑aware.
+          </p>
+          <p>
+            Recently, I’ve been exploring NLP and knowledge distillation. I spend a good amount of time reading papers,
+            implementing smaller ideas from them, and comparing how well they actually work on real data.
+          </p>
+        </div>
+        <div class="details-list">
+          <h3>Education</h3>
+          <p><strong>BRAC UNIVERSITY</strong>, B.Sc. Computer Science</p>
+          <p>2022 – Current · CGPA: 3.74</p>
+          <h3>Relevant coursework</h3>
+          <ul>
+            <li>Artificial Intelligence, Machine Learning</li>
+            <li>Database Systems, Data Structures, Algorithms</li>
+            <li>Linear Algebra and Fourier Analysis</li>
+            <li>Differential and Integral Calculus</li>
+            <li>Principles of Physics I &amp; II</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="inner">
+        <div class="section-heading">
+          <h2>Projects</h2>
+          <p>
+            A selection of projects where I learned the most—ranging from applied NLP to full‑stack web development.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <header>
+              <h3>BokuBot</h3>
+              <span class="tag">Python · LangChain · RAG</span>
+            </header>
+            <p>
+              Developed an AI chatbot for BRAC University students to fix pain points of the outdated university
+              website. Scraped content, built a vector database, and used retrieval‑augmented generation to answer
+              student questions reliably.
+            </p>
+            <ul class="project-points">
+              <li>Scraped the existing site with BeautifulSoup and converted PDFs into embeddings.</li>
+              <li>Experimented with different retrieval strategies to balance speed and cost.</li>
+            </ul>
+            <footer>
+              <a href="https://github.com/ProfCode101/BokuBot" target="_blank" rel="noreferrer" class="text-link">Code (GitHub)</a>
+            </footer>
+          </article>
+
+          <article class="project-card">
+            <header>
+              <h3>Data Science, ML &amp; Deep Learning Portfolio</h3>
+              <span class="tag">Python · TensorFlow · Sklearn</span>
+            </header>
+            <p>
+              A collection of notebooks and experiments covering data cleaning, visualization, classical ML, and deep
+              learning. Used public datasets to practice model training, evaluation, and tuning.
+            </p>
+            <ul class="project-points">
+              <li>Used Pandas, Seaborn, and Matplotlib to explore and visualize patterns in data.</li>
+              <li>Trained and tuned models with scikit‑learn, TensorFlow, Keras, and Spark.</li>
+            </ul>
+            <footer>
+              <a href="https://github.com/ProfCode101/Portfolio-Project" target="_blank" rel="noreferrer" class="text-link">Code (GitHub)</a>
+            </footer>
+          </article>
+
+          <article class="project-card">
+            <header>
+              <h3>Purbachal NewTown Society Website</h3>
+              <span class="tag">React · Node.js · MongoDB</span>
+            </header>
+            <p>
+              Developed a website for the Purbachal New Town Society with a user‑hierarchical management system and a
+              modern, responsive UI.
+            </p>
+            <ul class="project-points">
+              <li>Implemented role‑based access to keep admin and member views clean and focused.</li>
+              <li>Built the stack with React, Node.js, and MongoDB for flexibility and scalability.</li>
+            </ul>
+            <footer>
+              <a href="https://github.com/ProfCode101/Purbachal-NewTown-Society-Website" target="_blank" rel="noreferrer" class="text-link">Code (GitHub)</a>
+            </footer>
+          </article>
+
+          <article class="project-card">
+            <header>
+              <h3>Password Generator</h3>
+              <span class="tag">Python · Streamlit</span>
+            </header>
+            <p>
+              A small password generator that lets users pick the character types and length they want instead of
+              relying on browser‑suggested passwords.
+            </p>
+            <ul class="project-points">
+              <li>Gave users control over complexity while keeping the interface simple.</li>
+              <li>Built with Streamlit for quick iteration and a clean UI.</li>
+            </ul>
+            <footer>
+              <a href="https://github.com/ProfCode101/Password-Generator" target="_blank" rel="noreferrer" class="text-link">Code (GitHub)</a>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="inner">
+        <div class="section-heading">
+          <h2>Experience</h2>
+          <p>
+            Things I’ve done recently that connect directly to my interests in ML, NLP, and data science.
+          </p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <h3>Paper on NLP and Knowledge Distillation</h3>
+              <p class="where">Independent research</p>
+              <p class="when">March 2025 – Current</p>
+            </div>
+            <ul>
+              <li>Staying up to date with recent work in NLP and model compression.</li>
+              <li>Reviewing and studying research papers to understand how knowledge distillation behaves in practice.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <h3>Python for Data Science &amp; ML Bootcamp</h3>
+              <p class="where">Udemy</p>
+              <p class="when">2024 – 2025</p>
+            </div>
+            <ul>
+              <li>Completed a full bootcamp focused on Python for data science and machine learning.</li>
+              <li>Certificate no: UC-71cb0ff1-004c-4ae6-9b30-d4d98762ec1b.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <h3>AI+ Prompt Engineer Level 1</h3>
+              <p class="where">AICERTs</p>
+              <p class="when">2025</p>
+            </div>
+            <ul>
+              <li>Explored prompt‑engineering techniques for building more reliable AI systems.</li>
+              <li>Certificate no: 6fe0296b5a33.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="inner skills-grid">
+        <div>
+          <h2>Skills & Expertise</h2>
+          <p>
+            The tools and ideas I’ve spent the most time with so far.
+          </p>
+        </div>
+        <div class="skills-columns">
+          <div>
+            <h3>Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>C / C++ (coursework)</li>
+              <li>Go</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tools & frameworks</h3>
+            <ul>
+              <li>LangChain</li>
+              <li>RAG</li>
+              <li>Scikit-learn</li>
+              <li>TensorFlow</li>
+              <li>Pandas</li>
+              <li>Keras</li>
+              <li>Spark</li>
+              <li>SQL, NoSQL</li>
+              <li>AWS</li>
+              <li>Docker</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Concepts</h3>
+            <ul>
+              <li>Data structures & algorithms</li>
+              <li>Relational databases</li>
+              <li>Cloud Computing</li>
+              <li>DevOps</li>
+              <li>Machine Learning and Artificial Intelligence</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="inner contact-grid">
+        <div>
+          <h2>Contact</h2>
+          <p>
+            If you’d like to talk about an internship, a part‑time role, or just a project idea
+            you think I might enjoy, feel free to reach out.
+          </p>
+        </div>
+        <div class="contact-card">
+          <ul>
+            <li>
+              <span class="label">Email</span>
+              <a href="mailto:tasnimdrmc6461@gmail.com" class="value">tasnimdrmc6461@gmail.com</a>
+            </li>
+            <li>
+              <span class="label">GitHub</span>
+              <a href="https://github.com/ProfCode101" target="_blank" rel="noreferrer" class="value">
+                github.com/ProfCode101
+              </a>
+            </li>
+            <li>
+              <span class="label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/tasnim-rahmatullah-88b585256/" target="_blank" rel="noreferrer" class="value">
+                Tasnim Rahmatullah
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p>
+        Built by hand with plain HTML, CSS, and a bit of JavaScript.
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
